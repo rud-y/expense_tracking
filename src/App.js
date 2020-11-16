@@ -1,12 +1,14 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import './App.css';
+import ExpenseBox from './containers/ExpenseBox';
+import ErrorPage from './pages/ErrorPage';
 
-function App() {
-  return (
-    React.createElement('h2',null, 'daily-expense-tracker')
-  );
-  // let paragraph = document.createElement('p');
-  //   paragraph.textContent = "Ahoj ako sa mas?";
+
+function App () {
+    return (
+      <ExpenseBox/>
+    );
 }
 
 export default App;
